@@ -65,7 +65,7 @@ const Filters = () => {
            {colors.map((c, index) => {
              if(c === 'all') {
                return <button key ={index} name="color" onClick={updateFilters} data-color='all' className={`${color === 'all' ? 'all-btn active': 'all-btn'}`}>
-                 all
+                all
                </button>
              }
              return <button key={index} name="color" style={{background: c}} className={`${color === c ? 'color-btn active' : 'color-btn'}`} data-color={c} onClick={updateFilters}>
